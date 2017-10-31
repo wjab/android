@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyBroadcastReceiver</string>
+    <string name="conn_enabled">Conexión Activa</string>
+    <string name="conn_disabled">Conexión inactiva</string>
+    <string name="text_wifi">Activar o desactivar el estado de la conexión a Internet.</string>
+    <string name="check_conn">Verificar la conexión manualmente</string>
+</resources>
