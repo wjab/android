@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WelcomeApp</string>
+    <string name="txt_btn_Welcome">Toast.!!!</string>
+    <string name="txt_btn_Welcome_Custom">Message.!!!</string>
+    <string name="welcome_msg">Welcome: %1$s, %2$s</string>
+    <string name="btn_new">Add new</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_add_database">Add to database</string>
+    <string name="btn_list">List all</string>
+    <string name="btn_list_sqlite">Database users</string>
+    <string name="txt_datos">Enviar</string>
+    <string name="txt_sendData">Pasar datos</string>
+
+    <string name="database_user_not_created">"No inserto el usuario a la base de datos"</string>
+    <string name="database_user_created">"Usuario insertado en la base de datos"</string>
+</resources>
