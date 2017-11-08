@@ -35,13 +35,9 @@ public class CustomListAdapter extends ArrayAdapter<UserObject> implements Filte
         mStringFilterList = itemname.getUserObjectsList();
     }
 
-   /*public void setArray(ListUserObject itemname){
-        this.itemname = itemname.getUserObjectsList();
-    }*/
-
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater=context.getLayoutInflater();
-        View rowView=inflater.inflate(R.layout.mylist, null, true);
+        View rowView = inflater.inflate(R.layout.mylist, null, true);
 
         txtTitle = (TextView) rowView.findViewById(R.id.item);
         imageView = (ImageView) rowView.findViewById(R.id.icon);

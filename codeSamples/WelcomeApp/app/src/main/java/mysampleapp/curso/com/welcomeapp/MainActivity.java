@@ -11,12 +11,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import Database.DatabaseManager;
+
 public class MainActivity extends AppCompatActivity {
 
     // Definicion de las variables de los controles
 
     EditText et_name, et_lastName;
-    Button btn_welcome, btn_add_new, btn_list_all, btn_welcome_custom;
+    Button btn_welcome, btn_add_new, btn_list_all, btn_welcome_custom, btn_list_all_database;
     String welcomeMessage;
     Toast toast;
     UserObject userObject;
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         context = this;
+        DatabaseManager.init(context);
 
         et_name = (EditText) findViewById(R.id.et_name);
         et_lastName = (EditText) findViewById(R.id.et_lastName);
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         btn_add_new = (Button) findViewById(R.id.btn_add_new);
         btn_list_all = (Button) findViewById(R.id.btn_list_all);
         btn_welcome_custom = (Button) findViewById(R.id.btn_welcome_custom);
+        btn_list_all_database = (Button) findViewById(R.id.btn_list_all_database);
 
         userObject = new UserObject();
 
@@ -65,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent registerIntent = new Intent(getApplicationContext(), RegisterUser.class);
                 startActivity(registerIntent);
-                finish();
             }
         });
 
@@ -81,7 +84,14 @@ public class MainActivity extends AppCompatActivity {
                 intentShowData.putExtra("userId", 44);
                 intentShowData.putExtra("name", "Minombre");*/
                 startActivity(intentShowData);
-                finish();
+            }
+        });
+
+        btn_list_all_database.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentShowData = new Intent(getApplicationContext(), DatabaseUserListActivity.class);
+                startActivity(intentShowData);
             }
         });
     }

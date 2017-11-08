@@ -72,6 +72,13 @@
                         android:layout_weight="1"
                         android:text="@string/btn_list" />
 
+                    <Button
+                        android:id="@+id/btn_list_all_database"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/btn_list_sqlite" />
+
                 </LinearLayout>
 
 

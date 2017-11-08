@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,10 +17,14 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import Database.DatabaseHelper;
+import Database.DatabaseManager;
+import model.User;
+
 public class RegisterUser extends AppCompatActivity {
 
     EditText et_name, et_lastName, et_user, et_password;
-    Button btn_register;
+    Button btn_register, btnRegisterDatabase;
     Context context;
     ListUserObject listUserEncapsulado;
 
@@ -47,9 +52,34 @@ public class RegisterUser extends AppCompatActivity {
 
         btn_register = (Button) findViewById(R.id.btnRegister);
 
+        btnRegisterDatabase = (Button) findViewById(R.id.btnRegisterDatabase);
+
         /*et_name.setText(userObject.getName());
         et_lastName.setText(userObject.getLastName());*/
 
+        btnRegisterDatabase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                try {
+                    User user = new User();
+                    user.name = et_name.getText().toString();
+                    user.lastName = et_lastName.getText().toString();
+                    user.user = et_user.getText().toString();
+                    user.password = et_password.getText().toString();
+
+                    DatabaseManager.getInstance().addUser(user);
+                    Toast.makeText(context, getString(R.string.database_user_created), Toast.LENGTH_SHORT).show();
+                }
+                catch (Exception ex)
+                {
+                    Log.e(ex.getMessage(), getString(R.string.database_user_not_created));
+                    Toast.makeText(context, getString(R.string.database_user_not_created), Toast.LENGTH_SHORT).show();
+                }
+
+
+            }
+        });
 
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
