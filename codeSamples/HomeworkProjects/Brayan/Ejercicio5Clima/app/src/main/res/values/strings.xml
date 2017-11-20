@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Ejercicio5Clima</string>
+    <string name="defaultText">------</string>
+    <string name="txt_humedad">Humedad:</string>
+    <string name="txt_viento">Viento:</string>
+    <string name="txt_nivel_mar">Nivel mar:</string>
+    <string name="txt_boton_clima">Ver el clima</string>
+    <string name="txt_actualizar">Actualizar</string>
+    <string name="txt_boton_clima_historicos">Ver histórico</string>
+    <string name="format12Hour">hh:mm:ss aa</string>
+    <string name="format24Hour">kk:mm:ss</string>
+    <string name="dateformat">MMM dd, yyyy</string>
+    <string name="fulltime">yyyy/MM/dd</string>
+
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+</resources>
