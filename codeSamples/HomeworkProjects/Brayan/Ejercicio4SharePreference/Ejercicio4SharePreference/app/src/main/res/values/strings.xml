@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Ejercicio4SharePreference</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Teléfono</string>
+    <string name="email">Email</string>
+    <string name="derecion">Dirección</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="iniciarSesion">Iniciar sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="defaultText">-----</string>
+    <string name="registrarSharedPreference">Registrar SharedPreference</string>
+    <string name="registrarDataBase">Registrar DataBase</string>
+    <string name="listaSharedPreference">Lista SharedPreference</string>
+    <string name="listaDataBase">Lista DataBase</string>
+    <string name="mensaje_registro_exitoso">Información registrada exitosamente</string>
+    <string name="mensaje_registro_fallido">Información no registrada</string>
+    <string name="mensaje_lista_usuario_shared">Lista de usuarios SharedPreference cargada exitosamente</string>
+    <string name="mensaje_lista_usuario_db">Lista de usuarios DataBase cargada exitosamente</string>
+    <string name="mensaje_lista_usuario_vacia">La lista se encuentra vacía</string>
+    <string name="mensaje_autenticacion_fallido">Credenciales incorrectos</string>
+</resources>
