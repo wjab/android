@@ -40,7 +40,7 @@ public class GeneralFunctions
     public String ConvertToSpeed(double value)
     {
         String result;
-        result = String.valueOf( Double.parseDouble(formatter.format( value * 100 )) ) + " Km/h" ;
+        result = String.valueOf( Double.parseDouble(formatter.format( value * 10 )) ) + " Km/h" ;
         return result;
     }
 

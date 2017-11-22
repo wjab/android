@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
             lblIconoClima.setText(GetIcon(clima.getWeatherMain()));
             lblIconoClima.setTypeface(weatherFont);
             lblTemperatura.setText(String.valueOf(clima.getTemperature()));
-            lblMinMax.setText(String.valueOf(clima.getMinTemperature()));
+            lblMinMax.setText(String.valueOf(clima.getMinTemperature() + " - " + clima.getMaxTemperature()));
             lblHumedad.setText(String.valueOf(clima.getHumidity()) );
             lblNivelMar.setText(String.valueOf(clima.getSeaLevel()) );
             lblViento.setText(String.valueOf(clima.getWindSpeed()) );
