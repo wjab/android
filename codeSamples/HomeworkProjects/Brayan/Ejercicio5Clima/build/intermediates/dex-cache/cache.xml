@@ -3,39 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio5Clima/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="cddbdca668f6baec778a02387b405cd96649b407">
-        <dex dex="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio5Clima/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b5a641719f9ce5fac7ed5f44a41b27ac864b1ede/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/Bryan/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.18/38da306aafee11459cd935a01d2c92a98dc670a4/library-1.0.18.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="38da306aafee11459cd935a01d2c92a98dc670a4">
-        <dex dex="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio5Clima/app/build/intermediates/pre-dexed/debug/library-1.0.18_d8243e0be2bcd1dc5f66bce2e22db8099a4d3ce4.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Bryan/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.18/38da306aafee11459cd935a01d2c92a98dc670a4/library-1.0.18.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="38da306aafee11459cd935a01d2c92a98dc670a4">
-        <dex dex="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio5Clima/app/build/intermediates/transforms/dex/debug/folders/1000/10/library-1.0.18_d8243e0be2bcd1dc5f66bce2e22db8099a4d3ce4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio5Clima/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/Bryan/Github/android/codeSamples/HomeworkProjects/Brayan/Ejercicio5Clima/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio5Clima/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7e92e4ca3f567796dbae8997396bd583c87eaeb0/classes.dex" />
+        <dex dex="/Users/Bryan/Github/android/codeSamples/HomeworkProjects/Brayan/Ejercicio5Clima/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b13c3b40223962f9fe3c7e3bf78291d4d0229c1c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Bryan/Github/android/codeSamples/HomeworkProjects/Brayan/Ejercicio5Clima/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fef27a636d96e9bf6fd5cc87714be0af2d04f9da">
+        <dex dex="/Users/Bryan/Github/android/codeSamples/HomeworkProjects/Brayan/Ejercicio5Clima/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_143583d30cd020ccf041b7dd2f8a30cb9bc267d9/classes.dex" />
     </item>
 
 </items>

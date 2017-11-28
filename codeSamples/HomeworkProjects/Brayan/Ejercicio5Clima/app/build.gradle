@@ -29,5 +29,6 @@ dependencies {
     compile 'com.mcxiaoke.volley:library:1.0.18'
     compile 'com.j256.ormlite:ormlite-core:4.48'
     compile 'com.j256.ormlite:ormlite-android:4.48'
+    compile 'com.android.support:support-v4:26.+'
     testCompile 'junit:junit:4.12'
 }
