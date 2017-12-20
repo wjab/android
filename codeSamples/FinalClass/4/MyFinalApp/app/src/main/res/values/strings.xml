@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyFinalApp</string>
+    <string name="myButton">My Button</string>
+    <string name="save">Guardar Base Datos</string>
+    <string name="savePreferences">Guardar Preferencias</string>
+
+    <string name="database_not_created">"No inserto en la base de datos"</string>
+    <string name="database_created">"Se insertó en la base de datos"</string>
+</resources>

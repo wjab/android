@@ -29,11 +29,11 @@ public class MainActivity extends TabActivity implements TabHost.OnTabChangeList
         tabHost.setOnTabChangedListener(this);
 
         intent = new Intent(this, WeatherTabActivity.class);
-        spec = tabHost.newTabSpec("First").setIndicator("Weather").setContent(intent);
+        spec = tabHost.newTabSpec("First").setIndicator("Weather").setContent(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         tabHost.addTab(spec);
 
         intent = new Intent(this, WeatherHistoryTabActivity.class);
-        spec = tabHost.newTabSpec("Second").setIndicator("Weather History").setContent(intent);
+        spec = tabHost.newTabSpec("Second").setIndicator("Weather History").setContent(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
         tabHost.addTab(spec);
 
         tabHost.getTabWidget().getChildAt(1).setBackgroundResource(R.color.defaultTabColor);

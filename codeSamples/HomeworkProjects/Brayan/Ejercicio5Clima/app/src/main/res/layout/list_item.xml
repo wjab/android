@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:cacheColorHint="@android:color/transparent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultText"
+        android:id="@+id/texto"
+        android:layout_below="@+id/category"
+        android:layout_toRightOf="@+id/lblIconoClima"
+        android:layout_toEndOf="@+id/lblIconoClima"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/defaultText"
+        android:id="@+id/category"
+        android:textSize="21sp"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/lblIconoClima"
+        android:layout_toEndOf="@+id/lblIconoClima" />
+
+    <TextView
+        android:id="@+id/lblIconoClima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:cropToPadding="false"
+        android:text="@string/defaultText"
+        android:textColor="@color/colorWhite"
+        android:textSize="35sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/texto"
+        android:maxHeight="35dp"
+        android:maxWidth="74dp"
+        android:adjustViewBounds="true"/>
+
+</RelativeLayout>
