@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">MyFinalApp</string>
     <string name="myButton">My Button</string>
+    <string name="customMesage">Holis</string>
+    <string name="Year">2017</string>
 </resources>

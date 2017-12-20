@@ -35,7 +35,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        context = this;
+       context = this;
 
         intentParams = getIntent();
         customMessage = intentParams.getStringExtra("one");
@@ -46,6 +46,8 @@ public class Main2Activity extends AppCompatActivity {
         button = (AppCompatButton) findViewById(R.id.btnSave);
         btnSavePref = (AppCompatButton) findViewById(R.id.btnSavePreferences);
 
+       // DataBaseManager.getInstance().getAllData();
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +57,7 @@ public class Main2Activity extends AppCompatActivity {
                     data.year = year.getText().toString();
 
                     DataBaseManager.getInstance().addData(data);
+
                     Toast.makeText(context, getString(R.string.database_created), Toast.LENGTH_SHORT).show();
                 }
                 catch (Exception ex)
@@ -95,7 +98,7 @@ public class Main2Activity extends AppCompatActivity {
                 String stringJson = gson.toJson(tempListDataObject);
 
                 editor.putString("ListData", stringJson);
-
+                editor.commit();
                 Toast.makeText(context, "Data registrada", Toast.LENGTH_SHORT).show();
             }
         });

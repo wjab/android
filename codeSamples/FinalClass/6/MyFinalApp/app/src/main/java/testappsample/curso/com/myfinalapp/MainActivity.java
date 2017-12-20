@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        tv_country = (TextView) findViewById(R.id.country);
+        tv_city = (TextView) findViewById(R.id.city);
         serviceController = new ServiceController();
 
         // GPS Service
@@ -58,8 +59,7 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
 
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10000, 0, this);
 
-        tv_country = (TextView) findViewById(R.id.country);
-        tv_city = (TextView) findViewById(R.id.city);
+
 
 
         /*
@@ -122,8 +122,9 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
 
         try
         {
-            jsonArray = response.getJSONObject("sys");
-            tv_country.setText( jsonArray.getString("country") );
+
+            jsonObject = response.getJSONObject("sys");
+            tv_country.setText( jsonObject.getString("country") );
             tv_city.setText(response.getString("name"));
         }
         catch (Exception ex)
