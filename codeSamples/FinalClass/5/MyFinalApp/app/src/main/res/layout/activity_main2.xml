@@ -20,7 +20,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/myButton2"
+            android:id="@+id/mymessage"
             android:text="Mensaje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

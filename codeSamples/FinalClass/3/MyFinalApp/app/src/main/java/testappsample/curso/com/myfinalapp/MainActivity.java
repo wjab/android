@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import testappsample.curso.com.myfinalapp.DataBase.DataBaseManager;
+import testappsample.curso.com.myfinalapp.Model.Data;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,11 +34,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 intent = new Intent(context, Main2Activity.class);
-                intent.putExtra("one", textOne.getText().toString());
-                intent.putExtra("two", textTwo.getText().toString());
+                /*intent.putExtra("one", textOne.getText());
+                intent.putExtra("two", textTwo.getText());*/
+
+                Data dataObject= new Data();
+
+                dataObject.setMessage(textOne.getText().toString());
+                dataObject.setYear(textTwo.getText().toString());
+
+                intent.putExtra("data",  dataObject);
+
                 startActivity(intent);
             }
         });
-
     }
 }

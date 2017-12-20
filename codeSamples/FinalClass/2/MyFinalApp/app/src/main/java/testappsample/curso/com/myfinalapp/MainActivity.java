@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(context, Main2Activity.class);
+                intent = new Intent(getApplicationContext(), Main2Activity.class);
                 intent.putExtra("customMessage", "This is my app");
                 intent.putExtra("currentYear", 2017);
                 startActivity(intent);

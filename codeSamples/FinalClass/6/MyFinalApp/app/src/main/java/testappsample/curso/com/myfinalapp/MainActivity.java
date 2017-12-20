@@ -40,8 +40,10 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         tv_country = (TextView) findViewById(R.id.country);
         tv_city = (TextView) findViewById(R.id.city);
+
         serviceController = new ServiceController();
 
         // GPS Service
@@ -87,12 +89,15 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
 
     public void LoadWeatherData(double latitude, double longitude)
     {
-        String uri = "http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&appid=e6ac45f980a98a86771e44a949a290ad";
+        String uri = "http://api.openweathermap.org/data/2.5/weather?lat=" +  latitude + "&lon=" + longitude + "&appid=e6ac45f980a98a86771e44a949a290ad";
 
         if(!busyService) {
             serviceController.jsonObjectRequest(uri, Request.Method.GET, null, this, this);
         }
     }
+
+
+
 
     @Override
     public void onStatusChanged(String provider, int status, Bundle extras) {
@@ -118,11 +123,9 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
     @Override
     public void onResponse(JSONObject response) {
         JSONObject jsonObject;
-        JSONArray jsonArray;
 
         try
         {
-
             jsonObject = response.getJSONObject("sys");
             tv_country.setText( jsonObject.getString("country") );
             tv_city.setText(response.getString("name"));

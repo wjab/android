@@ -30,8 +30,10 @@ public class Main2Activity extends AppCompatActivity {
         context = this;
 
         intentParams = getIntent();
-        customMessage = intentParams.getStringExtra("one");
-        customYear = intentParams.getStringExtra("two");
+        Data data = (Data)intentParams.getSerializableExtra("data");
+
+        /*customMessage = intentParams.getStringExtra("one");
+        customYear = intentParams.getStringExtra("two");*/
 
         message = (TextView) findViewById(R.id.mymessage);
         year = (TextView) findViewById(R.id.year);

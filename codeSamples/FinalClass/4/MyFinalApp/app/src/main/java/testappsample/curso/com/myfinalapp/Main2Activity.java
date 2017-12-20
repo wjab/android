@@ -21,7 +21,7 @@ import testappsample.curso.com.myfinalapp.Model.ListDataObject;
 
 public class Main2Activity extends AppCompatActivity {
 
-    private TextView message, year;
+    private TextView message, year, contador;
     private AppCompatButton button, btnSavePref;
     Intent intentParams;
     String customMessage, customYear;
@@ -35,7 +35,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-       context = this;
+        context = this;
 
         intentParams = getIntent();
         customMessage = intentParams.getStringExtra("one");
@@ -45,8 +45,7 @@ public class Main2Activity extends AppCompatActivity {
         year = (TextView) findViewById(R.id.year);
         button = (AppCompatButton) findViewById(R.id.btnSave);
         btnSavePref = (AppCompatButton) findViewById(R.id.btnSavePreferences);
-
-       // DataBaseManager.getInstance().getAllData();
+        contador = (TextView) findViewById(R.id.contador);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +56,6 @@ public class Main2Activity extends AppCompatActivity {
                     data.year = year.getText().toString();
 
                     DataBaseManager.getInstance().addData(data);
-
                     Toast.makeText(context, getString(R.string.database_created), Toast.LENGTH_SHORT).show();
                 }
                 catch (Exception ex)
@@ -73,7 +71,7 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(View v) {
                 SharedPreferences preferences = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
                 //SharedPreferences prefs = getSharedPreferences("MyPreferences", MODE_PRIVATE);
-                String stringListUser = preferences.getString("ListData", null);
+                String stringListUser = preferences.getString("DataList", null);
                 Gson gson = new Gson();
 
                 ArrayList<Data> DataListTemporal = new  ArrayList<Data>();
@@ -97,8 +95,11 @@ public class Main2Activity extends AppCompatActivity {
                 tempListDataObject.setUserObjectsList(DataListTemporal);
                 String stringJson = gson.toJson(tempListDataObject);
 
-                editor.putString("ListData", stringJson);
+                editor.putString("DataList", stringJson);
                 editor.commit();
+
+                //findViewById(R.id.contador).setText(contador);
+
                 Toast.makeText(context, "Data registrada", Toast.LENGTH_SHORT).show();
             }
         });

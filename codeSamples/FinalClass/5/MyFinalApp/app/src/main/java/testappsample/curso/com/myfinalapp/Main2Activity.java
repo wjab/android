@@ -10,6 +10,7 @@ import android.widget.Toast;
 public class Main2Activity extends AppCompatActivity {
 
     private AppCompatButton button;
+
     Context context;
 
     @Override
@@ -19,16 +20,12 @@ public class Main2Activity extends AppCompatActivity {
 
         context = this;
 
-        button = (AppCompatButton) findViewById(R.id.myButton2);
+        button = (AppCompatButton) findViewById(R.id.mymessage);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Toast.makeText(context, "MI MENSAJE", Toast.LENGTH_LONG).show();
             }
         });
-    }
-
-    public Main2Activity() {
     }
 }

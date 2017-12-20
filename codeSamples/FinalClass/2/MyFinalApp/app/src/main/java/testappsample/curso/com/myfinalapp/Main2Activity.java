@@ -24,6 +24,8 @@ public class Main2Activity extends AppCompatActivity {
         message = (TextView) findViewById(R.id.mymessage);
         year = (TextView) findViewById(R.id.year);
 
-        message.setText(customMessage+" "+customYear);
+        message.setText(customMessage);
+        year.setText(String.valueOf(customYear));
+
     }
 }
