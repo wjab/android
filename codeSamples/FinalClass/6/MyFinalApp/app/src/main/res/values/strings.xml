@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyFinalApp</string>
+    <string name="getweather">Consultar clima</string>
 </resources>
