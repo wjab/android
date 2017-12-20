@@ -1,5 +1,6 @@
 package testappsample.curso.com.myfinalapp;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -17,16 +18,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        context = this;
 
         button = (AppCompatButton) findViewById(R.id.myButton);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(this, Main2Activity.class);
+                intent = new Intent(context, Main2Activity.class);
                 startActivity(intent);
             }
         });
 
+    }
+
+    public MainActivity() {
     }
 }
