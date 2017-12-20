@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio2Calc/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio2Calc/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7b6a6e413bb3505c9e04804a1d3e4c1fb37ef4cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio2Calc/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2b0647754e59b2bdfd3b90319810c56b23fc5f91">
+        <dex dex="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio2Calc/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_387da58d2ea13055f07adcd400b258c1d4507010/classes.dex" />
+    </item>
+
+</items>

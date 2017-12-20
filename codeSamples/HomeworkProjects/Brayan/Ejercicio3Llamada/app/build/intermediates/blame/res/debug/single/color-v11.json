@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio3Llamada/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/Bryan/.android/build-cache/c66fdabdc10cf97c390f3f52ce48ee69331e9cfb/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio3Llamada/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/Bryan/.android/build-cache/c66fdabdc10cf97c390f3f52ce48ee69331e9cfb/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/Bryan/Ejercicio3Llamada/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/Bryan/.android/build-cache/c66fdabdc10cf97c390f3f52ce48ee69331e9cfb/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/Bryan/Ejercicio3Llamada/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/Bryan/.android/build-cache/c66fdabdc10cf97c390f3f52ce48ee69331e9cfb/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]

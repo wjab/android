@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import testappsample.curso.com.myfinalapp.DataBase.DataBaseManager;
 import testappsample.curso.com.myfinalapp.Model.Data;
@@ -21,7 +22,7 @@ import testappsample.curso.com.myfinalapp.Model.ListDataObject;
 
 public class Main2Activity extends AppCompatActivity {
 
-    private TextView message, year;
+    private TextView message, year, countSharePreference, countDataBase;
     private AppCompatButton button, btnSavePref;
     Intent intentParams;
     String customMessage, customYear;
@@ -29,6 +30,7 @@ public class Main2Activity extends AppCompatActivity {
     private ListDataObject tempListDataObject;
 
     Context context;
+    List<Data> dataList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,13 @@ public class Main2Activity extends AppCompatActivity {
         year = (TextView) findViewById(R.id.year);
         button = (AppCompatButton) findViewById(R.id.btnSave);
         btnSavePref = (AppCompatButton) findViewById(R.id.btnSavePreferences);
+        countSharePreference = (TextView) findViewById(R.id.countSharePreference);
+        countDataBase = (TextView) findViewById(R.id.countDataBase);
+
+        message.setText(customMessage);
+        year.setText( customYear );
+
+        contarListas();
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +65,7 @@ public class Main2Activity extends AppCompatActivity {
 
                     DataBaseManager.getInstance().addData(data);
                     Toast.makeText(context, getString(R.string.database_created), Toast.LENGTH_SHORT).show();
+                    contarListas();
                 }
                 catch (Exception ex)
                 {
@@ -96,11 +106,38 @@ public class Main2Activity extends AppCompatActivity {
 
                 editor.putString("ListData", stringJson);
 
+                editor.commit();
+
                 Toast.makeText(context, "Data registrada", Toast.LENGTH_SHORT).show();
+                contarListas();
             }
         });
+    }
 
-        message.setText(customMessage);
-        year.setText( customYear );
+    public void contarListas(){
+
+        int conteoSharePreference, conteoDataBase;
+
+        //Lista SharePreference
+        SharedPreferences preferences = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
+        String stringListUser = preferences.getString("ListData", null);
+        ArrayList<Data> DataListTemporal = new  ArrayList<Data>();
+        Gson gson = new Gson();
+
+        if(stringListUser != null) {
+            tempListDataObject = gson.fromJson(stringListUser, ListDataObject.class);
+            DataListTemporal = tempListDataObject.getUserObjectsList();
+            if(DataListTemporal != null){
+                conteoSharePreference = DataListTemporal.size();
+                countSharePreference.setText("Cantidad SharePreference: " + conteoSharePreference);
+            }
+        }
+
+        //Lista BaseDatos
+        dataList = DataBaseManager.getInstance().getAllData();
+        if(dataList != null){
+            conteoDataBase = dataList.size();
+            countDataBase.setText("Cantidad DataBase: " + conteoDataBase);
+        }
     }
 }

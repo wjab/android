@@ -1,0 +1,7 @@
+#Wed Oct 25 09:55:01 CST 2017
+base.0=/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio2Calc/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7b6a6e413bb3505c9e04804a1d3e4c1fb37ef4cf
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio2Calc/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_387da58d2ea13055f07adcd400b258c1d4507010/classes.dex
+base.1=/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio2Calc/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_387da58d2ea13055f07adcd400b258c1d4507010
+file.0=/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio2Calc/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7b6a6e413bb3505c9e04804a1d3e4c1fb37ef4cf/classes.dex
