@@ -1,0 +1,7 @@
+#Thu Nov 09 09:03:17 CST 2017
+base.0=/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio4SharePreference/Ejercicio4SharePreference/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_dfaa6eefb24c2cefd72dd8198ba87c2af380f9f7
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio4SharePreference/Ejercicio4SharePreference/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3f3a637e121438ae4e46505e3a124937a94242b5/classes.dex
+base.1=/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio4SharePreference/Ejercicio4SharePreference/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3f3a637e121438ae4e46505e3a124937a94242b5
+file.0=/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio4SharePreference/Ejercicio4SharePreference/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_dfaa6eefb24c2cefd72dd8198ba87c2af380f9f7/classes.dex

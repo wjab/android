@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Bryan/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/4.48/e579bd2905d0399af5029aaaf9817d5fa0ca88a5/ormlite-core-4.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio4SharePreference/Ejercicio4SharePreference/app/build/intermediates/transforms/dex/debug/folders/1000/10/ormlite-core-4.48_4fae823f4921f859f0ba08113fb0f359dbed36dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio4SharePreference/Ejercicio4SharePreference/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="842d0bcf5802cdeb47e26379bdba8e4faf7a77f3">
+        <dex dex="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio4SharePreference/Ejercicio4SharePreference/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_3f3a637e121438ae4e46505e3a124937a94242b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Bryan/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-android/4.48/afa06f539a4026c10b247386312aa67404b80a16/ormlite-android-4.48.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio4SharePreference/Ejercicio4SharePreference/app/build/intermediates/pre-dexed/debug/ormlite-android-4.48_ee558d98b623f51035d2e3c7749a578a2a5466d3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Bryan/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-android/4.48/afa06f539a4026c10b247386312aa67404b80a16/ormlite-android-4.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio4SharePreference/Ejercicio4SharePreference/app/build/intermediates/transforms/dex/debug/folders/1000/10/ormlite-android-4.48_ee558d98b623f51035d2e3c7749a578a2a5466d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio4SharePreference/Ejercicio4SharePreference/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio4SharePreference/Ejercicio4SharePreference/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_dfaa6eefb24c2cefd72dd8198ba87c2af380f9f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Bryan/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/4.48/e579bd2905d0399af5029aaaf9817d5fa0ca88a5/ormlite-core-4.48.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="/Users/Bryan/DeveloperCenter/[AndroidProject]/Capacitacion/Ejercicio4SharePreference/Ejercicio4SharePreference/app/build/intermediates/pre-dexed/debug/ormlite-core-4.48_4fae823f4921f859f0ba08113fb0f359dbed36dc.jar" />
+    </item>
+
+</items>
