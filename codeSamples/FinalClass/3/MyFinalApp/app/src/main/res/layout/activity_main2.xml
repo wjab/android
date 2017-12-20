@@ -33,6 +33,7 @@
             android:layout_below="@+id/year"
             android:id="@+id/btnSave"
             android:text="@string/save"
+            android:onClick="clickMe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

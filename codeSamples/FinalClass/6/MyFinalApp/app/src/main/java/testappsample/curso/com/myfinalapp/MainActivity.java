@@ -43,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
 
         serviceController = new ServiceController();
 
+        tv_country = (TextView) findViewById(R.id.country);
+        tv_city = (TextView) findViewById(R.id.city);
+
         // GPS Service
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -118,12 +121,13 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
     @Override
     public void onResponse(JSONObject response) {
         JSONObject jsonObject;
-        JSONArray jsonArray;
+        //JSONArray jsonArray;
 
         try
         {
-            jsonArray = response.getJSONObject("sys");
-            tv_country.setText( jsonArray.getString("country") );
+            //jsonArray = response.getJSONObject("sys");
+            jsonObject = response.getJSONObject("sys");
+            tv_country.setText( jsonObject.getString("country") );
             tv_city.setText(response.getString("name"));
         }
         catch (Exception ex)

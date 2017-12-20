@@ -21,8 +21,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:layout_below="@+id/country"
             android:id="@+id/city"
+            android:layout_below="@+id/country"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ciudad no disponible"

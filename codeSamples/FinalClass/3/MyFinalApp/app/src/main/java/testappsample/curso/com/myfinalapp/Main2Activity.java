@@ -37,7 +37,7 @@ public class Main2Activity extends AppCompatActivity {
         year = (TextView) findViewById(R.id.year);
         button = (AppCompatButton) findViewById(R.id.btnSave);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        /*button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
@@ -47,6 +47,9 @@ public class Main2Activity extends AppCompatActivity {
 
                     DataBaseManager.getInstance().addData(data);
                     Toast.makeText(context, getString(R.string.database_created), Toast.LENGTH_SHORT).show();
+
+                    //Just for be sure
+                    DataBaseManager.getInstance().getAllData();
                 }
                 catch (Exception ex)
                 {
@@ -54,9 +57,28 @@ public class Main2Activity extends AppCompatActivity {
                     Toast.makeText(context, getString(R.string.database_not_created), Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+        });*/
 
         message.setText(customMessage);
         year.setText( customYear );
+    }
+
+    public void clickMe(View v) {
+        try {
+            Data data = new Data();
+            data.message = message.getText().toString();
+            data.year = year.getText().toString();
+
+            DataBaseManager.getInstance().addData(data);
+            Toast.makeText(context, getString(R.string.database_created), Toast.LENGTH_SHORT).show();
+
+            //Just for be sure
+            DataBaseManager.getInstance().getAllData();
+        }
+        catch (Exception ex)
+        {
+            Log.e(ex.getMessage(), getString(R.string.database_not_created));
+            Toast.makeText(context, getString(R.string.database_not_created), Toast.LENGTH_SHORT).show();
+        }
     }
 }

@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         context = this;
+        DataBaseManager.init(context);
 
         textOne = (EditText) findViewById(R.id.textOne);
         textTwo = (EditText) findViewById(R.id.textTwo);
@@ -31,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 intent = new Intent(context, Main2Activity.class);
-                intent.putExtra("one", textOne.getText());
-                intent.putExtra("two", textTwo.getText());
+                intent.putExtra("one", textOne.getText().toString());
+                intent.putExtra("two", textTwo.getText().toString());
                 startActivity(intent);
             }
         });

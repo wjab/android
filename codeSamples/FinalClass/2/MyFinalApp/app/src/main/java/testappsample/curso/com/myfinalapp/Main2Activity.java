@@ -18,13 +18,14 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         intentParams = getIntent();
-        customMessage = intentParams.getStringExtra("customMesage", null);
-        customYear = intentParams.getIntExtra("Year",0);
+        //customMessage = intentParams.getStringExtra("customMesage", null);
+        customMessage = intentParams.getStringExtra("customMessage");
+        customYear = intentParams.getIntExtra("currentYear",0);
 
         message = (TextView) findViewById(R.id.mymessage);
         year = (TextView) findViewById(R.id.year);
 
         message.setText(customMessage);
-        year.setText(customYear);
+        year.setText(String.valueOf(customYear));
     }
 }
